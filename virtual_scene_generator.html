@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Scene Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="moving-text">
+            <p>Welcome to the Virtual Scene Generator! Explore the beauty of different seasons and places!</p>
+        </div>
+        <h1>Virtual Scene Generator</h1>
+        <p>Create beautiful virtual scenes based on weather, season, and geography!</p>
+    </header>
+
+    <button id="themeToggle">Switch Theme</button>
+    <label class="toggle-switch">
+        <input type="checkbox" id="themeToggleCheckbox">
+        <span class="slider"></span>
+    </label>
+
+    <main>
+        <section class="form-container">
+            <form id="sceneForm">
+                <label for="weather">Weather:</label>
+                <select id="weather">
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowy">Snowy</option>
+                </select>
+                
+                <label for="season">Season:</label>
+                <select id="season">
+                    <option value="summer">Summer</option>
+                    <option value="winter">Winter</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="spring">Spring</option>
+                </select>
+                
+                <label for="scene">Geographic Scene:</label>
+                <select id="scene">
+                    <option value="field">Field</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="market">Market</option>
+                    <option value="beach">Beach</option>
+                    <option value="forest">Forest</option>
+                    <option value="desert">Desert</option>
+                </select>
+                
+                <button type="button" id="generate">Generate Scene</button>
+            </form>
+        </section>
+
+        <section class="output-container">
+            <p id="loading">Loading your scene, please wait...</p>
+            <img id="sceneImage" alt="Generated Scene">
+            <div id="sceneDetails" class="scene-details">
+                <p id="sceneCaption"></p>
+                <p id="sceneDescription"></p>
+            </div>
+            <div class="button-container">
+                <button id="Randominp">Random Button 🎲 </button>
+                <button id="downloadScene">Download Scene ⬇️</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>❅ || Made by Aryan Singh/H1/18 || ❅</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

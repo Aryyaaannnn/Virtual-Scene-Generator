@@ -1,0 +1,361 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center ;
+    background-size: cover;
+    color: #333;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+}
+.moving-text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(187, 217, 234);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form select,
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #74e27a;
+}
+.output-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+#sceneImage {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+#Randominp {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#Randominp:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+#Randominp:active {
+    transform: scale(1);
+}
+
+#Randominp {
+    margin-top: 1rem;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dark-mode .form-container {
+    background: #333;
+    color: white;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#themeToggle {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0d5c1d;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, font-size 0.3s;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#themeToggle:hover {
+    color: #07aa30;
+    font-size: 1.3rem;
+}
+
+#themeToggle:active {
+    transform: scale(0.98);
+}
+
+.output-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+#sceneImage {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scene-details {
+    display: none;
+    margin-top: 1rem;
+    color: #4f4d4dee;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#sceneCaption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#sceneDescription {
+    font-style: italic;
+    color: #4f4f4f;
+}
+#downloadScene {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#downloadScene:hover {
+    background-color: #45a049; 
+}
+
+#downloadScene:active {
+    background-color: #3e8e41;
+}
+#downloadScene {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 10; 
+}
+
+.button-container {
+    position: relative;
+}
+
+#Randominp {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    margin-bottom: 2rem; 
+}
+
+#downloadScene {
+    padding: 14px 8px; 
+    background-color: #30ac34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 0px;  
+    top: calc(100% + 3rem);  
+    z-index: 10;
+    text-align: center;  
+    line-height:0.0; 
+}
+
+#downloadScene:hover {
+    background-color: #0f6c15;
+}
+
+#downloadScene:active {
+    background-color: #3e8e41;
+}
+
+
+#Randominp {
+    position: relative;
+    margin-top: 1rem;
+}
+
+#sceneImage {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+#loading {
+    display: none;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+#loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
